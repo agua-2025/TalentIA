@@ -1,13 +1,7 @@
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import Link from "next/link";
-import { Brain, Users, Zap, Target, ArrowRight } from "lucide-react";
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import Link from 'next/link'
+import { Brain, Users, Zap, Target, ArrowRight } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -16,12 +10,12 @@ export default function Home() {
       <section className="py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Conecte <span className="text-blue-600">Talentos</span> e{" "}
+            Conecte <span className="text-blue-600">Talentos</span> e{' '}
             <span className="text-blue-600">Empresas</span> com IA
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            A plataforma de recrutamento mais inteligente do Brasil. Encontre o
-            match perfeito com tecnologia de ponta.
+            A plataforma de recrutamento mais inteligente do Brasil. 
+            Encontre o match perfeito com tecnologia de ponta.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/auth/register">
@@ -59,8 +53,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Análise inteligente de currículos e matching automático entre
-                  candidatos e vagas.
+                  Análise inteligente de currículos e matching automático entre candidatos e vagas.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -72,8 +65,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Algoritmos que identificam a compatibilidade perfeita baseada
-                  em skills e cultura.
+                  Algoritmos que identificam a compatibilidade perfeita baseada em skills e cultura.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -85,8 +77,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Reduza o tempo de contratação em até 70% com automação
-                  inteligente.
+                  Reduza o tempo de contratação em até 70% com automação inteligente.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -98,8 +89,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Milhares de profissionais e empresas já confiam na nossa
-                  plataforma.
+                  Milhares de profissionais e empresas já confiam na nossa plataforma.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -114,14 +104,15 @@ export default function Home() {
             Pronto para encontrar seu próximo talento?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Junte-se a centenas de empresas que já transformaram seu processo de
-            recrutamento.
+            Junte-se a centenas de empresas que já transformaram seu processo de recrutamento.
           </p>
           <Link href="/auth/register">
-            <Button size="lg">Criar Conta Gratuita</Button>
+            <Button size="lg">
+              Criar Conta Gratuita
+            </Button>
           </Link>
         </div>
       </section>
     </div>
-  );
+  )
 }
